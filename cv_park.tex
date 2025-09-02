@@ -1,17 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Compact Academic CV
+% Medium Length Professional CV
 % LaTeX Template
-% Version 2.0 (6/7/2019)
+% Version 3.0 (December 17, 2022)
 %
 % This template originates from:
 % https://www.LaTeXTemplates.com
 %
-% Authors:
-% Dario Taraborelli (http://nitens.org/taraborelli/home)
-% Vel (vel@LaTeXTemplates.com)
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
 %
 % License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -19,192 +21,227 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt]{article} % Default document font size
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
 
-\input{structure.tex} % Include the file specifying the document structure and styling
+% \usepackage{ebgaramond} % Use the EB Garamond font
 
-% Set PDF meta-information
-\hypersetup{
-	pdftitle={Albert Einstein - Curriculum vitae},
-	pdfauthor={Albert Einstein}
-}
+%------------------------------------------------
+
+\usepackage{hyperref}
+
+\name{Sang Woo Park} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Department of Ecology \& Evolution, University of Chicago} % Main address
+
+\address{Chicago, IL 60637 USA} % A secondary address (optional)
+
+\address{swp2@uchicago.edu} % Contact information
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	CONTACT AND GENERAL INFORMATION
+%	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-{\LARGE\bfseries Sang Woo Park} % Name
-\bigskip\\ % Whitespace
+\begin{rSection}{Academic appointments}
 
-Princeton University\\ % Address
-Department of Ecology and Evolutionary Biology\\
-Princeton, N.J. 08544 USA
-\medskip % Whitespace
+	\textbf{University of Chicago}, Chicago, IL, USA \hfill July, 2024--now \\ 
+	Postdoctoral Researcher and Life Sciences Research Foundation fellow\\
+	Advisor: Sarah E. Cobey
+\end{rSection}
 
-Email: \href{mailto:swp2@princeton.edu}{swp2@princeton.edu} % Email address
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\section*{Education}
-
-\years{2014--2019}\textsc{BSc} in Mathematics and Statistics (Honours), McMaster University, Hamilton, ON, Canada\\
-Thesis Title: Estimating time-varying transmission rates of the SIR model\\
-Advisor: Benjamin. M. Bolker\\
-
-\years{2019--}\textsc{PhD} in Ecology and Evolutionary Biology, Princeton University, Princeton, NJ, USA\\
-Thesis Title: Cross-scale dynamics of infectious diseases\\
-Advisor: Bryan T. Grenfell
+\begin{rSection}{Education}
+	
+	\textbf{Princeton University}, Princeton, NJ, USA \hfill 2019--May, 2024 \\ 
+	\textsc{PhD} in Ecology and Evolutionary Biology\\
+	Thesis Title: Cross-scale dynamics of infectious disease\\
+	Advisor: Bryan T. Grenfell
+	
+	\textbf{McMaster University}, McMaster University, Hamilton, ON, Canada \hfill 2014--2019 \\ 
+	\textsc{BSc} in Mathematics and Statistics (Honours)\\
+	Thesis Title: Estimating time-varying transmission rates of the SIR model\\
+	Advisor: Benjamin. M. Bolker
+	
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS AND TALKS
+%	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section*{Honours and Awards}
+\begin{rSection}{Awards and fellowships}
 
-\years{2023} COVID Response Recognition Award, Princeton University\\
+Life Sciences Research Foundation fellowship \hfill 2024\\
+COVID Response Recognition Award, Princeton University \hfill 2023\\
+Honorific Fellowship: Charlotte Elizabeth Procter Fellowship, Princeton University  \hfill 2023\\
+Undergraduate Student Research Awards, NSERC \hfill 2018
 
-\years{2023} Honorific Fellowship: Charlotte Elizabeth Procter Fellowship, Princeton University\\
+\end{rSection}
 
-\years{2018} Undergraduate Student Research Awards, Natural Sciences and Engineering Research Council of Canada
+\begin{rSection}{All publications}
 
-\section*{Teaching}
+\textbf{Park, S.W.}, Noble, B., Howerton, E., Nielsen, B.F., Lentz, S., Ambroggio, L., Dominguez, S., Messacar, K., and Grenfell, B.T., 2024. Predicting the impact of non-pharmaceutical interventions against COVID-19 on Mycoplasma pneumoniae in the United States. \textit{Epidemics}, 49, 100808.
 
-\years{2019--2021} Graduate Assistantship in Instruction. Disease Ecology, Economics, and Policy (ENV 304 / ECO 328 / EEB 304 / SPI 455), Princeton University, Fall 2019, 2020, 2021.
+Charniga, K., \textbf{Park, S.W.}, Akhmetzhanov, A.R., Cori, A., Dushoff, J., Funk, S., Gostic, K.M., Linton, N.M., Lison, A., Overton, C.E., Pulliam, J.R.C., Ward, T., Cauchemez, S., and Abbott, S., 2024. Best practices for estimating and reporting epidemiological delay distributions of infectious diseases using public health surveillance and healthcare data. \textit{PLoS Computational Biology}, 20 (10) e1012520.
 
-\section*{Advising and mentoring}
+\textbf{Park, S.W.}, Lawal, T., Marin, M., Marlow, M.A., Grenfell, B.T., Masters, N.B., 2024. Modeling the population-level impact of a third dose of MMR vaccine on a mumps outbreak at the University of Iowa. \textit{PNAS}, 121 (43) e2403808121.
 
-\years{2020--2021} Joanne Wha-Eum Lee. Princeton University undergraduate senior thesis project. Title: Direct and indirect mortality impacts of COVID-19 in the US, March--December 2020.\\
+\textbf{Park, S.W.}, Cobey, S., Metcalf, C.J.E., Levine, J.M., and Grenfell, B.T., 2024. Predicting pathogen mutual invasibility and co-circulation. \textit{Science}, 386(6718), 175-179.
 
-\years{2019--2020} Tomi Lawal. Princeton University undergraduate senior thesis project. Title: Analyzing the impact of a third dose of the measles--mumps--rubella vaccine used in a university mumps outbreak.
+Yang, Q., \textbf{Park, S.W.}, Saad-Roy, C.M., Ahmad, I., Viboud, C., Arinaminpathy, N., and Grenfell, B.T., 2024. Assessing population-level target product profiles of universal human influenza A vaccines. \textit{Epidemics}, 48, 100776.
 
-\section*{All publications}
+Earn, D.J., \textbf{Park, S.W.}, amd Bolker, B.M., 2024. Fitting Epidemic Models to Data: A Tutorial in Memory of Fred Brauer. \textit{Bulletin of Mathematical Biology}, 86(9), 1-32.
 
-ORCID: 0000-0003-2202-3361. See \href{https://scholar.google.com/citations?user=ZSCrs78AAAAJ&hl=en&oi=ao}{Google Scholar} for links to articles.\\
-\\
+Holmdahl, I., Bents, S.J., Baker, R.E., Casalegno, J.S., Trovão, N.S., \textbf{Park, S.W.}, Metcalf, C.J.E., and Grenfell, B.T., 2024. Differential impact of COVID-19 non-pharmaceutical interventions on the epidemiological dynamics of respiratory syncytial virus subtypes A and B. \textit{Scientific Reports}, 14(1), 14527.
 
-\years{2023} \textbf{Park, S.W.}, Daskalaki, I., Izzo, R., Aranovich, I., te Velthuis, A., Notterman, D., Metcalf, C.J.E., and Grenfell, B.T., 2022. Relative role of community transmission and campus contagion in driving the spread of SARS-CoV-2: lessons from Princeton University. \textit{PNAS Nexus}, 2(7): pgad201.\\
+\textbf{Park, S.W.}, Messacar, K., Douek, D.C., Spaulding, A.B., Metcalf, C.J.E., and Grenfell, B. T., 2024. Predicting the impact of COVID-19 non-pharmaceutical intervention on short-and medium-term dynamics of enterovirus D68 in the US. \textit{Epidemics}, 46, 100736.
 
-\years{2023} \textbf{Park, S.W.}, Sun, K., Abbott, S., Sender, R., Bar-On, Y.M., Weitz, J.S., Funk, S., Grenfell, B.T., Backer, J.A., Wallinga, J., Viboud, C., and Dushoff, J., 2022. Inferring the differences in incubation-period and generation-interval distributions of the Delta and Omicron variants of SARS-CoV-2. \textit{PNAS}, 120(22), e2221887120.\\
+Yang, Q., Wang, B., Lemey, P., Dong, L., Mu, T., Wiebe, R. A., Guo, F., Sequeira Trovao, N., \textbf{Park, S.W.}, Lweis, N., Tsui, J.L.-H., Bajaj, S., Cheng, Y., Yang, L., Haba, Y., Li, B., Zhang, G., Pybus, O.G., Tian, H., and Grenfell, B.T., 2024. Synchrony of Bird Migration with Global Dispersal of Avian Influenza Reveals Exposed Bird Orders. \textit{Nature Communications}, 15(1), 1126.
 
-\years{2023} \textbf{Park, S.W.}, Dushoff, J., Grenfell, B.T., and Weitz, J.S., 2022. Intermediate levels of asymptomatic transmission can lead to the highest levels of epidemic fatalities. \textit{PNAS Nexus}, 2(4): pgad106.\\
+\textbf{Park, S.W.}, Daskalaki, I., Izzo, R., Aranovich, I., te Velthuis, A., Notterman, D., Metcalf, C.J.E., and Grenfell, B.T., 2023. Relative role of community transmission and campus contagion in driving the spread of SARS-CoV-2: lessons from Princeton University. \textit{PNAS Nexus}, 2(7): pgad201.
 
-\years{2023} Lee, W.E., \textbf{Park, S.W.}, Weinberger, D.M., Olson, D., Simonsen, L., Grenfell, B.T., and Viboud, C., 2023. Direct and indirect mortality impacts of the COVID-19 pandemic in the United States, March 1, 2020 to January 1, 2022. \textit{eLife}, 12:e77562.\\
+\textbf{Park, S.W.}, Sun, K., Abbott, S., Sender, R., Bar-On, Y.M., Weitz, J.S., Funk, S., Grenfell, B.T., Backer, J.A., Wallinga, J., Viboud, C., and Dushoff, J., 2023. Inferring the differences in incubation-period and generation-interval distributions of the Delta and Omicron variants of SARS-CoV-2. \textit{PNAS}, 120(22), e2221887120.
 
-\years{2023} Harris, J.D.\textsuperscript{*}, \textbf{Park, S.W.}\textsuperscript{*}, Dushoff, J., and Weitz, J.S., 2022. How time-scale differences in asymptomatic and symptomatic transmission shape SARS-CoV-2 outbreak dynamics. \textit{Epidemics}, 100664.\\
-\textsuperscript{*}Contributed equally.\\
+\textbf{Park, S.W.}, Dushoff, J., Grenfell, B.T., and Weitz, J.S., 2023. Intermediate levels of asymptomatic transmission can lead to the highest levels of epidemic fatalities. \textit{PNAS Nexus}, 2(4): pgad106.
 
-\years{2022} Baker, R.E., Saad Roy, C.M., \textbf{Park, S.W.}, Farrar, J., Metcalf, C.J.E., and Grenfell, B.T., 2022. Long-term benefits of nonpharmaceutical interventions for endemic infections are shaped by respiratory pathogen dynamics. \textit{PNAS}, 119(49), e2208895119.\\
+Harris, J.D.\textsuperscript{*}, \textbf{Park, S.W.}\textsuperscript{*}, Dushoff, J., and Weitz, J.S., 2022. How time-scale differences in asymptomatic and symptomatic transmission shape SARS-CoV-2 outbreak dynamics. \textit{Epidemics}, 100664.\\
+\textsuperscript{*}Contributed equally.
 
-\years{2022} Sender, R., Bar-On, Y., \textbf{Park, S.W.}, Noor, E., Dushoff, J., and Milo, R., 2022. The unmitigated profile of COVID-19 infectiousness. \textit{eLife}, 11:e79134.\\
+Lee, W.E., \textbf{Park, S.W.}, Weinberger, D.M., Olson, D., Simonsen, L., Grenfell, B.T., and Viboud, C., 2023. Direct and indirect mortality impacts of the COVID-19 pandemic in the United States, March 1, 2020 to January 1, 2022. \textit{eLife}, 12:e77562.
 
-\years{2022} Messacar, K., Baker, R.E., \textbf{Park, S.W.}, Nguyen-Tran, H., Cataldi, J.R., and Grenfell, B.T., 2022. Preparing for uncertainty: endemic paediatric viral illnesses after COVID-19 pandemic disruption. \textit{The Lancet}, 400(10364): 1663-1665.\\
+Baker, R.E., Saad Roy, C.M., \textbf{Park, S.W.}, Farrar, J., Metcalf, C.J.E., and Grenfell, B.T., 2022. Long-term benefits of nonpharmaceutical interventions for endemic infections are shaped by respiratory pathogen dynamics. \textit{PNAS}, 119(49), e2208895119.
 
-\years{2022} \textbf{Park, S.W.}, Bolker, B.M., Funk, S., Metcalf, C.J.E., Weitz, J.S., Grenfell, B.T., and Dushoff, J., 2022. The importance of the generation interval in investigating dynamics and control of new SARS-CoV-2 variants. \textit{Journal of The Royal Society Interface}, 19: 20220173-20220173\\
+Messacar, K., Baker, R.E., \textbf{Park, S.W.}, Nguyen-Tran, H., Cataldi, J.R., and Grenfell, B.T., 2022. Preparing for uncertainty: endemic paediatric viral illnesses after COVID-19 pandemic disruption. \textit{The Lancet}, 400(10364): 1663-1665.
 
-\years{2022} Nguyen-Tran, H., \textbf{Park, S.W.}, Messacar, K., Dominguez, S.R., Vogt, M.R., Permar, S., Permaul, P., Hernandez, M., Douek, D.C., McDermott, A.B., Metcalf, C.J.E., Grenfell, B.T., and Spaulding, A.B., 2022. Enterovirus D68: a test case for the use of immunological surveillance to develop tools to mitigate the pandemic potential of emerging pathogens. \textit{The Lancet Microbe}, 3(2): e83-e85.\\
+Lizewski, R.A.\textsuperscript{*}, Sealfon, R.S.G.\textsuperscript{*}, \textbf{Park, S.W.}\textsuperscript{*}, Smith, G.R.\textsuperscript{*}, Porter, C.K.\textsuperscript{*}, Gonzalez-Reiche, A.S.\textsuperscript{*}, Ge, Y.\textsuperscript{*}, Miller, C.M.\textsuperscript{*}, Goforth, C.W., Pincas, H., Termini, M.S., Ramos, I., Nair, V.D., Lizewski, S.E., Alshammary, H., Cer, R.Z., Chen, H.W., George, M.-C., Arnold, C.E., Glang, L.A., Long, K.A., Malagon, F., Marayag, J.J., Nunez, E., Rice, G.K., Santa Ana, E., Schilling, M.A., Smith, D.R., Sugiharto, V.A., Sun, P., van de Guchte, A., Khan, Z., Dutta, J., Vangeti, S., Voegtly, L.J., Weir, D.L., Metcalf, C.J.E., Troyanskaya, O.G., Bishop-Lilly, K.A., Grenfell, B.T., van Bakel, H., Letizia, A.G.\textsuperscript{*}, and Sealfon, S.C.\textsuperscript{*}, 2022. SARS-CoV-2 outbreak dynamics in an isolated US military recruit training center with rigorous prevention measures. \textit{Epidemiology}, 33(6): 797-807.\\
+\textsuperscript{*}Contributed equally.
 
-\years{2022} Lizewski, R.A.\textsuperscript{*}, Sealfon, R.S.G.\textsuperscript{*}, \textbf{Park, S.W.}\textsuperscript{*}, Smith, G.R.\textsuperscript{*}, Porter, C.K.\textsuperscript{*}, Gonzalez-Reiche, A.S.\textsuperscript{*}, Ge, Y.\textsuperscript{*}, Miller, C.M.\textsuperscript{*}, Goforth, C.W., Pincas, H., Termini, M.S., Ramos, I., Nair, V.D., Lizewski, S.E., Alshammary, H., Cer, R.Z., Chen, H.W., George, M.-C., Arnold, C.E., Glang, L.A., Long, K.A., Malagon, F., Marayag, J.J., Nunez, E., Rice, G.K., Santa Ana, E., Schilling, M.A., Smith, D.R., Sugiharto, V.A., Sun, P., van de Guchte, A., Khan, Z., Dutta, J., Vangeti, S., Voegtly, L.J., Weir, D.L., Metcalf, C.J.E., Troyanskaya, O.G., Bishop-Lilly, K.A., Grenfell, B.T., van Bakel, H., Letizia, A.G.\textsuperscript{*}, and Sealfon, S.C.\textsuperscript{*}, 2022. SARS-CoV-2 outbreak dynamics in an isolated US military recruit training center with rigorous prevention measures. \textit{Epidemiology}, 33(6): 797-807.\\
-\textsuperscript{*}Contributed equally.\\
+Sender, R., Bar-On, Y., \textbf{Park, S.W.}, Noor, E., Dushoff, J., and Milo, R., 2022. The unmitigated profile of COVID-19 infectiousness. \textit{eLife}, 11:e79134.
 
-\years{2021} Baker, R.E., \textbf{Park, S.W.}, Wagner, C.E., and Metcalf, C.J.E., 2021. The limits of SARS-CoV-2 predictability. \textit{Nature Ecology \& Evolution}, 5(8): 1052-1054.\\
+\textbf{Park, S.W.}, Bolker, B.M., Funk, S., Metcalf, C.J.E., Weitz, J.S., Grenfell, B.T., and Dushoff, J., 2022. The importance of the generation interval in investigating dynamics and control of new SARS-CoV-2 variants. \textit{Journal of The Royal Society Interface}, 19: 20220173-20220173
 
-\years{2021} Dushoff, J., and \textbf{Park, S.W.}, 2021. Speed and strength of an epidemic intervention. \textit{Proceedings of the Royal Society B}, 288(1947): 20201556.\\
+Nguyen-Tran, H., \textbf{Park, S.W.}, Messacar, K., Dominguez, S.R., Vogt, M.R., Permar, S., Permaul, P., Hernandez, M., Douek, D.C., McDermott, A.B., Metcalf, C.J.E., Grenfell, B.T., and Spaulding, A.B., 2022. Enterovirus D68: a test case for the use of immunological surveillance to develop tools to mitigate the pandemic potential of emerging pathogens. \textit{The Lancet Microbe}, 3(2): e83-e85.
 
-\years{2021} \textbf{Park, S.W.}, Pons-Salort, M., Messacar, K., Cook, C., Meyers, L., Farrar, J., Grenfell, B.T., 2021. Epidemiological dynamics of enterovirus D68 in the United States and implications for acute flaccid myelitis. \textit{Science Translational Medicine}, 13(584): eabd2400.\\
+Baker, R.E., \textbf{Park, S.W.}, Wagner, C.E., and Metcalf, C.J.E., 2021. The limits of SARS-CoV-2 predictability. \textit{Nature Ecology \& Evolution}, 5(8): 1052-1054.
 
-\years{2020} \textbf{Park, S.W.}, Sun, K., Champredon, D., Li, M., Bolker, B.M., Earn, D.J.D., Weitz, J.S., Grenfell, B.T. and Dushoff, J., 2020. Forward-looking serial intervals correctly link epidemic growth to reproduction numbers. \textit{PNAS}, 118(2): e2011548118.\\
+Dushoff, J., and \textbf{Park, S.W.}, 2021. Speed and strength of an epidemic intervention. \textit{Proceedings of the Royal Society B: Biological Sciences}, 288(1947): 20201556.
 
-\years{2020} Weitz, J.S., \textbf{Park, S.W.}, Eksin, C. and Dushoff, J., 2020. Awareness-driven behavior changes can shift the shape of epidemics away from peaks and toward plateaus, shoulders, and oscillations. \textit{PNAS}, 117(51): 32764-32771.\\
+\textbf{Park, S.W.}, Pons-Salort, M., Messacar, K., Cook, C., Meyers, L., Farrar, J., Grenfell, B.T., 2021. Epidemiological dynamics of enterovirus D68 in the United States and implications for acute flaccid myelitis. \textit{Science Translational Medicine}, 13(584): eabd2400.
 
-\years{2020} Baker, R.E., \textbf{Park, S.W.}, Yang, W., Vecchi, G.A., Metcalf, C.J.E. and Grenfell, B.T., 2020. The impact of COVID-19 nonpharmaceutical interventions on the future dynamics of endemic infections. \textit{PNAS}, 117(48): 30547-30553.\\
+\textbf{Park, S.W.}, Sun, K., Champredon, D., Li, M., Bolker, B.M., Earn, D.J.D., Weitz, J.S., Grenfell, B.T. and Dushoff, J., 2020. Forward-looking serial intervals correctly link epidemic growth to reproduction numbers. \textit{PNAS}, 118(2): e2011548118.
 
-\years{2020} Metcalf, C.J.E., Morris, D.H., and \textbf{Park, S.W.}, 2020. Mathematical models to guide pandemic response. \textit{Science}, 369(6502): 368-369.\\
+Weitz, J.S., \textbf{Park, S.W.}, Eksin, C. and Dushoff, J., 2020. Awareness-driven behavior changes can shift the shape of epidemics away from peaks and toward plateaus, shoulders, and oscillations. \textit{PNAS}, 117(51): 32764-32771.
 
-\years{2020} \textbf{Park, S.W.}, Bolker, B.M., Champredon, D., Earn, D.J.D., Li, M., Weitz, J.S., Grenfell, B.T. and Dushoff, J., 2020. Reconciling early-outbreak estimates of the basic reproductive number and its uncertainty: framework and applications to the novel coronavirus (SARS-CoV-2) outbreak. \textit{Journal of the Royal Society Interface}, 17: 20200144.\\
+Baker, R.E., \textbf{Park, S.W.}, Yang, W., Vecchi, G.A., Metcalf, C.J.E. and Grenfell, B.T., 2020. The impact of COVID-19 nonpharmaceutical interventions on the future dynamics of endemic infections. \textit{PNAS}, 117(48): 30547-30553.
 
-\years{2020} \textbf{Park, S.W.}, Champredon, D., and Dushoff, J., 2020. Inferring generation-interval distributions from contact-tracing data. \textit{Journal of the Royal Society Interface}, 17(167): 20190719.\\
+\textbf{Park, S.W.}, Sun, K., Viboud, C., Grenfell, B.T., and Dushoff, J., 2020. Potential Role of Social Distancing in Mitigating Spread of Coronavirus Disease, South Korea. \textit{Emerging Infectious Diseases}, 26(11): 2697–2700.
 
-\years{2020} Weitz, J.S., Beckett, S.J., Coenen, A.R., Demory, D., Dominguez-Mirazo, M., Dushoff, J., Leung, C.-Y., Li, G., Măgălie, A., \textbf{Park, S.W.}, Rodriguez-Gonzalez, R., Shivam, S., and Zhao, C.Y., 2020. Modeling shield immunity to reduce COVID-19 epidemic spread. \textit{Nature medicine}, 26(6): 849-854.\\
+Metcalf, C.J.E., Morris, D.H., and \textbf{Park, S.W.}, 2020. Mathematical models to guide pandemic response. \textit{Science}, 369(6502): 368-369.
 
-\years{2020} \textbf{Park, S.W.}, Cornforth, D.M., Dushoff J., and Weitz J.S., 2020. The time scale of asymptomatic transmission affects estimates of epidemic potential in the COVID-19 outbreak. \textit{Epidemics}, 31: 100392.\\
+\textbf{Park, S.W.}, Bolker, B.M., Champredon, D., Earn, D.J.D., Li, M., Weitz, J.S., Grenfell, B.T. and Dushoff, J., 2020. Reconciling early-outbreak estimates of the basic reproductive number and its uncertainty: framework and applications to the novel coronavirus (SARS-CoV-2) outbreak. \textit{Journal of the Royal Society Interface}, 17: 20200144.
 
-\years{2020} \textbf{Park, S.W.}, and Bolker, B.M., 2020. A note on observation processes in epidemic models. \textit{Bulletin of Mathematical Biology}, 82(3): 1-8.\\
+\textbf{Park, S.W.}, Champredon, D., and Dushoff, J., 2020. Inferring generation-interval distributions from contact-tracing data. \textit{Journal of the Royal Society Interface}, 17(167): 20190719.
 
-\years{2020} \textbf{Park, S.W.}, Sun, K., Viboud, C., Grenfell, B.T., and Dushoff, J., 2020. Potential Role of Social Distancing in Mitigating Spread of Coronavirus Disease, South Korea. \textit{Emerging Infectious Diseases}, 26(11): 2697–2700.\\
+Weitz, J.S., Beckett, S.J., Coenen, A.R., Demory, D., Dominguez-Mirazo, M., Dushoff, J., Leung, C.-Y., Li, G., Măgălie, A., \textbf{Park, S.W.}, Rodriguez-Gonzalez, R., Shivam, S., and Zhao, C.Y., 2020. Modeling shield immunity to reduce COVID-19 epidemic spread. \textit{Nature medicine}, 26(6): 849-854.
 
-\years{2019} \textbf{Park, S.W.}, Champredon, D., Weitz, J.S., and Dushoff, J., 2019. A practical generation-interval-based approach to inferring the strength of epidemics from their speed. \textit{Epidemics}, 27: 12-18.\\
+\textbf{Park, S.W.}, Cornforth, D.M., Dushoff J., and Weitz J.S., 2020. The time scale of asymptomatic transmission affects estimates of epidemic potential in the COVID-19 outbreak. \textit{Epidemics}, 31: 100392.
 
-\years{2018} \textbf{Park, S.W.}, Dushoff, J., Earn, D.J.D., Poinar, H., and Bolker, B.M., 2018. Human
-ectoparasite transmission of the plague during the Second Pandemic is only weakly
-supported by proposed mathematical models. \textit{PNAS}, 115(34): E7892-E7893.\\
+\textbf{Park, S.W.}, and Bolker, B.M., 2020. A note on observation processes in epidemic models. \textit{Bulletin of Mathematical Biology}, 82(3): 1-8.
 
-\years{2017} \textbf{Park, S.W.}, and Bolker, B.M., 2017. Effects of contact structure on the transient
-evolution of HIV virulence. \textit{PLoS Computational Biology}, 13(3): e1005453.\\
+\textbf{Park, S.W.}, Champredon, D., Weitz, J.S., and Dushoff, J., 2019. A practical generation-interval-based approach to inferring the strength of epidemics from their speed. \textit{Epidemics}, 27: 12-18.
 
-\years{2017} Rekart, M.L., Ndifon, W., Brunham, R.C., Dushoff, J., \textbf{Park, S.W.}, Rawart, S., and
-Cameron, C.E., 2017. A double-edged sword: does highly active antiretroviral therapy contribute to syphilis incidence by impairing immunity to Treponema pallidum?.
-\textit{Sexually Transmitted Infections}, 93(5): 374-378.\\
+\textbf{Park, S.W.}, Dushoff, J., Earn, D.J.D., Poinar, H., and Bolker, B.M., 2018. Human ectoparasite transmission of the plague during the Second Pandemic is only weakly supported by proposed mathematical models. \textit{PNAS}, 115(34): E7892-E7893.
 
-\section*{Software}
+\textbf{Park, S.W.}, and Bolker, B.M., 2017. Effects of contact structure on the transient evolution of HIV virulence. \textit{PLoS Computational Biology}, 13(3): e1005453.
 
-\years{2023} \textbf{Park, S.W.}, and Abbott, S., \texttt{epidist}: Estimating delay distributions accounting for common biases. \url{https://github.com/parksw3/epidist-paper}.\\
+Rekart, M.L., Ndifon, W., Brunham, R.C., Dushoff, J., \textbf{Park, S.W.}, Rawart, S., and Cameron, C.E., 2017. A double-edged sword: does highly active antiretroviral therapy contribute to syphilis incidence by impairing immunity to Treponema pallidum?. \textit{Sexually Transmitted Infections}, 93(5): 374-378.
 
-\years{2022} \textbf{Park, S.W.}, and Bolker, B.M., \texttt{fitode}: Tools for Ordinary Differential Equations Model Fitting. \url{https://cran.r-project.org/web/packages/fitode/index.html}.
+\end{rSection}
 
-\section*{Textbook}
+\begin{rSection}{Invited talks}
 
-\years{2017} Alama S., and \textbf{Park. S.W.}, MATH 2XX3 -- Advanced Calculus II: Class notes recorded, adapted, and illustrated by Sang Woo Park. Available at McMaster University Library.
+Community ecology of infectious disease pathogens. \textit{University of Maryland, College Park}. 2025.
 
-\section*{Professional service}
+Using serosurveillance data to clarify epidemic trajectories: Enterovirus D68 case study. \textit{Hema-Net Serosurveillance Meeting, CITF}. 2024.
 
-Manuscript reviewer for Nature Ecology \& Evolution, PNAS, PLOS Computational Biology, BMC Medicine, Emerging Infectious Diseases, Proceedings of the Royal Society A, Proceedings of the Royal Society B, Epidemics, Scientific Reports, Mathematical Biosciences, PLOS One, PeerJ, etc.\\
+Generation and serial intervals in epidemics. \textit{Epinowcast Community Seminars}. 2023.
+
+Dynamical biases in epidemic inference. \textit{Institut de Biologie de l'Ecole Normale Superieure}. 2022.
+
+Characterizing the dynamics of enterovirus D68. \textit{Acute Flaccid Myelitis (AFM) working group meeting} and \textit{CDC Acute Flaccid Myelitis (AFM) task force meeting}. 2021.
+
+Potential roles of social distancing in mitigating the spread of coronavirus disease 2019 (COVID-19) in South Korea. \textit{WHO modelling call}. 2020.
+
+Quantifying the time scale of disease transmission: generation and serial intervals. \textit{Georgia Institute of Technology}. 2020.
+
+\end{rSection}
+
+
+\begin{rSection}{Contributed talks and posters}
+
+\textbf{Park. S.W.}, Grenfell, B.T., and Cobey, S, 2025. Susceptible host dynamics explain pathogen resilience to perturbations. \textit{Life Sciences Research Foundation Annual Meeting.} (Poster)
+
+\textbf{Park. S.W.}. 2025. Community ecology of infectious diseases. \textit{American Society of Naturalists, Asilomar.} (Talk)
+
+\textbf{Park. S.W.}, Dushoff, J., and Bolker, B.M., 2019. Transmission mechanisms of plague cannot be uniquely identified from historical mortality data. \textit{Ecology and Evolution of Infectious Diseases (EEID)}. 2019. (Poster)
+
+Dushoff, J., \textbf{Park. S.W.}, and Champredon, D., 2017. Generation intervals in space. \textit{Epidemics6}. 2017. (Poster)
+
+Bolker, B.M., and \textbf{Park. S.W.}, 2016. HIV virulence evolution in structured epidemic models. \textit{Ecology and Evolution of Infectious Diseases (EEID)}. 2016. (Poster)
+
+\end{rSection}
+
+
+\begin{rSection}{Teaching}
+
+Graduate Assistantship in Instruction. \hfill Fall 2019, 2020, 2021\\
+Disease Ecology, Economics, and Policy, Princeton University
+
+\end{rSection}
+
+\begin{rSection}{Undergraduate Student Mentoring}
+
+Catalina Posada \hfill Spring 2024\\
+Princeton University junior undergraduate student.
+
+Joanne Wha-Eum Lee \hfill Fall 2020--Spring 2021 \\
+Princeton University undergraduate senior thesis project.\\
+Title: Direct and indirect mortality impacts of COVID-19 in the US, March--December 2020.
+
+Tomi Lawal \hfill Fall 2019--Spring 2020\\
+Princeton University undergraduate senior thesis project.\\
+Title: Analyzing the impact of a third dose of the measles--mumps--rubella vaccine used in a university mumps outbreak.
+
+\end{rSection}
+
+\begin{rSection}{Software}
+
+Howes, A., \textbf{Park, S.W.}, and Abbott, S., 2024. \texttt{epidist}: Estimate epidemiological delay distributions for infectious diseases. \url{https://github.com/epinowcast/epidist}.
+
+\textbf{Park, S.W.}, and Bolker, B.M., 2022. \texttt{fitode}: Tools for Ordinary Differential Equations Model Fitting. \url{https://cran.r-project.org/web/packages/fitode/index.html}.
+
+\end{rSection}
+
+\begin{rSection}{Textbook}
+
+Alama S., and \textbf{Park. S.W.}, 2017. MATH 2XX3 -- Advanced Calculus II: Class notes recorded, adapted, and illustrated by Sang Woo Park. Available at McMaster University Library.
+
+\end{rSection}
+
+\begin{rSection}{Professional service}
+
+Manuscript reviewer for American Naturalist, BMC Medicine, BMC Public Health, Emerging Infectious Diseases, Epidemics, Mathematical Biosciences, Nature Ecology \& Evolution, PeerJ, PLOS Computational Biology, PLOS One, PNAS, Proceedings of the Royal Society A, Proceedings of the Royal Society B, Scientific Reports, etc.
 
 Modeling SARS-CoV-2 outbreak responses and control strategies for Princeton University and the US Navy. 
 
-\section*{Invited presentations}
-
-\years{2022} Dynamical biases in epidemic inference. \textit{Institut de Biologie de l'Ecole Normale Superieure}.\\
-
-\years{2021} Characterizing the dynamics of enterovirus D68. \textit{Acute Flaccid Myelitis (AFM) working group meeting} and \textit{CDC Acute Flaccid Myelitis (AFM) task force meeting}.\\
-
-\years{2020} Potential roles of social distancing in mitigating the spread of coronavirus disease 2019 (COVID-19) in South Korea. \textit{WHO modelling call}.\\
-
-\years{2020} Quantifying the time scale of disease transmission: generation and serial intervals. \textit{Georgia Institute of Technology}.\\
-
-\section*{Poster presentations}
-
-\years{2019} \textbf{Park. S.W.}, Dushoff, J., and Bolker, B.M., 2019. Transmission mechanisms of plague cannot be uniquely identified from historical mortality data. \textit{Ecology and Evolution of Infectious Diseases (EEID)}.\\
-
-\years{2017} Dushoff, J., \textbf{Park. S.W.}, and Champredon, D., 2017. Generation intervals in space. \textit{Epidemics6}.\\
-
-\years{2016} Bolker, B.M., and \textbf{Park. S.W.}, 2016. HIV virulence evolution in structured epidemic models. \textit{Ecology and Evolution of Infectious Diseases (EEID)}.\\
-
-%----------------------------------------------------------------------------------------
-%	GRANTS, HONOURS AND AWARDS
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	TEACHING
-%----------------------------------------------------------------------------------------
-
-\vfill % Whitespace before final footer
-
-%----------------------------------------------------------------------------------------
-%	FINAL FOOTER
-%----------------------------------------------------------------------------------------
-
-% Any final footer text such as a URL to the latest version of this CV, last updated date, compiled in XeTeX, etc
-\begin{center}
-	\scriptsize
-	Last updated: \today
-\end{center}
-
-%----------------------------------------------------------------------------------------
+\end{rSection}
 
 \end{document}
