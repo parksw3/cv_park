@@ -32,16 +32,28 @@
 
 \usepackage{hyperref}
 
+\newenvironment{yeardesc}[1][3.2cm]{%
+  \begin{list}{}{%
+    \setlength{\labelwidth}{#1}% width for the year column (fits "Pre-2025")
+    \setlength{\labelsep}{0.6em}
+    \setlength{\leftmargin}{\labelwidth}% set, then add (no arithmetic in \setlength!)
+    \addtolength{\leftmargin}{\labelsep}
+    \setlength{\itemsep}{.25\baselineskip}
+    \setlength{\topsep}{.25\baselineskip}
+    \renewcommand\makelabel[1]{\bfseries ##1\hfil\newline}% start item text on next line
+  }%
+}{\end{list}}
+
 \name{Sang Woo Park} % Your name to appear at the top
 
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
 
-\address{Department of Ecology \& Evolution, University of Chicago} % Main address
+\address{Seoul National University} % Main address
 
-\address{Chicago, IL 60637 USA} % A secondary address (optional)
+\address{1 Gwanak-ro, Gwanak-gu, Seoul, Republic of Korea 08826} % A secondary address (optional)
 
-\address{swp2@uchicago.edu} % Contact information
+\address{sangwoopark@snu.ac.kr} % Contact information
 
 %----------------------------------------------------------------------------------------
 
@@ -53,7 +65,10 @@
 
 \begin{rSection}{Academic appointments}
 
-	\textbf{University of Chicago}, Chicago, IL, USA \hfill July, 2024--now \\ 
+  \textbf{Seoul National University}, Seoul, Korea \hfill September, 2025--now \\ 
+  Assistant Professor in the School of Biological Sciences
+
+	\textbf{University of Chicago}, Chicago, IL, USA \hfill July, 2024--August, 2025 \\ 
 	Postdoctoral Researcher and Life Sciences Research Foundation fellow\\
 	Advisor: Sarah E. Cobey
 \end{rSection}
@@ -87,6 +102,11 @@ Undergraduate Student Research Awards, NSERC \hfill 2018
 \end{rSection}
 
 \begin{rSection}{All publications}
+
+Nguyen-Tran, H.\textsuperscript{*}, \textbf{Park, S.W.}\textsuperscript{*}, Vogt, M.R.\textsuperscript{*}, Permaul, P.\textsuperscript{*}, Spaulding, A.B., Hernandez, M.L., Bohl, J.A., Godbole, S., Ruckwardt, T.J., Krug, P.W., Moss, D.L., Derrien-Colemyn, A., Chowdhury, A., Dziubla, G., Wang, L., Castro, M., Narpala, S.R., Longtine, E.R., Henry, A.R., Ngo, T.-T.B., Dzantiev, L., Sigal, G.B., Metcalf, C.J.E., Kimberlin, D.W., Dominguez, S.R., Mittelman, A., McDermott, A.B., Serebryannyy, L.A., Grenfell, B., Messacar, K., and Douek, D.C., 2025. Dynamics of endemic virus re-emergence in children in the USA following the COVID-19 pandemic (2022–23): a prospective, multicentre, longitudinal, immunoepidemiological surveillance study. \textit{Lancet Infectious Diseases}\\
+\textsuperscript{*}Contributed equally.
+
+Howerton, E., Williams, T.C., Casalegno, J.-S., Dominguez, S., Gunson, R., Messacar, K., Metcalf, C.J.E., \textbf{Park, S.W.}, Viboud, C., and Grenfell, B.T., 2025. Using COVID-19 pandemic perturbation to model RSV-hMPV interactions and potential implications under RSV interventions. \textit{Nature Communications} 16(1), 7261. 
 
 \textbf{Park, S.W.}, Noble, B., Howerton, E., Nielsen, B.F., Lentz, S., Ambroggio, L., Dominguez, S., Messacar, K., and Grenfell, B.T., 2024. Predicting the impact of non-pharmaceutical interventions against COVID-19 on Mycoplasma pneumoniae in the United States. \textit{Epidemics}, 49, 100808.
 
@@ -168,34 +188,33 @@ Rekart, M.L., Ndifon, W., Brunham, R.C., Dushoff, J., \textbf{Park, S.W.}, Rawar
 
 \begin{rSection}{Invited talks}
 
-Community ecology of infectious disease pathogens. \textit{University of Maryland, College Park}. 2025.
+\begin{yeardesc}[2.2cm] % widen if "Pre-2025" wraps
+  \item[2025]
+  Mathematical modeling for predicting infectious disease outbreaks. \textit{AI Bio Research Center, Seoul National University}.
 
-Using serosurveillance data to clarify epidemic trajectories: Enterovirus D68 case study. \textit{Hema-Net Serosurveillance Meeting, CITF}. 2024.
-
-Generation and serial intervals in epidemics. \textit{Epinowcast Community Seminars}. 2023.
-
-Dynamical biases in epidemic inference. \textit{Institut de Biologie de l'Ecole Normale Superieure}. 2022.
-
-Characterizing the dynamics of enterovirus D68. \textit{Acute Flaccid Myelitis (AFM) working group meeting} and \textit{CDC Acute Flaccid Myelitis (AFM) task force meeting}. 2021.
-
-Potential roles of social distancing in mitigating the spread of coronavirus disease 2019 (COVID-19) in South Korea. \textit{WHO modelling call}. 2020.
-
-Quantifying the time scale of disease transmission: generation and serial intervals. \textit{Georgia Institute of Technology}. 2020.
+  \item[Pre-2025]
+  Community ecology of infectious disease pathogens. \textit{University of Maryland, College Park}. 2025.\\
+  Using serosurveillance data to clarify epidemic trajectories: Enterovirus D68 case study. \textit{Hema-Net Serosurveillance Meeting, CITF}. 2024.\\
+  Using mathematical models to understand the spread and control of infectious disease outbreaks. \textit{McMaster University}. 2023.\\
+  Generation and serial intervals in epidemics. \textit{Epinowcast Community Seminars}. 2023.\\
+  Dynamical biases in epidemic inference. \textit{Institut de Biologie de l'Ecole Normale Superieure}. 2022.\\
+  Characterizing the dynamics of enterovirus D68. \textit{Acute Flaccid Myelitis (AFM) working group meeting} and \textit{CDC Acute Flaccid Myelitis (AFM) task force meeting}. 2021.\\
+  Potential roles of social distancing in mitigating the spread of coronavirus disease 2019 (COVID-19) in South Korea. \textit{WHO modelling call}. 2020.\\
+  Quantifying the time scale of disease transmission: generation and serial intervals. \textit{Georgia Institute of Technology}. 2020.
+\end{yeardesc}
 
 \end{rSection}
 
-
 \begin{rSection}{Contributed talks and posters}
 
-\textbf{Park. S.W.}, Grenfell, B.T., and Cobey, S, 2025. Susceptible host dynamics explain pathogen resilience to perturbations. \textit{Life Sciences Research Foundation Annual Meeting.} (Poster)
-
-\textbf{Park. S.W.}. 2025. Community ecology of infectious diseases. \textit{American Society of Naturalists, Asilomar.} (Talk)
-
-\textbf{Park. S.W.}, Dushoff, J., and Bolker, B.M., 2019. Transmission mechanisms of plague cannot be uniquely identified from historical mortality data. \textit{Ecology and Evolution of Infectious Diseases (EEID)}. 2019. (Poster)
-
-Dushoff, J., \textbf{Park. S.W.}, and Champredon, D., 2017. Generation intervals in space. \textit{Epidemics6}. 2017. (Poster)
-
-Bolker, B.M., and \textbf{Park. S.W.}, 2016. HIV virulence evolution in structured epidemic models. \textit{Ecology and Evolution of Infectious Diseases (EEID)}. 2016. (Poster)
+\begin{yeardesc}[2.2cm]
+  \item[Pre-2025]
+  \textbf{Park. S.W.}, Grenfell, B.T., and Cobey, S, 2025. Susceptible host dynamics explain pathogen resilience to perturbations. \textit{Life Sciences Research Foundation Annual Meeting.} (Poster)\\
+  \textbf{Park. S.W.}. 2025. Community ecology of infectious diseases. \textit{American Society of Naturalists, Asilomar.} (Talk)\\
+  \textbf{Park. S.W.}, Dushoff, J., and Bolker, B.M., 2019. Transmission mechanisms of plague cannot be uniquely identified from historical mortality data. \textit{Ecology and Evolution of Infectious Diseases (EEID)}. 2019. (Poster)\\
+  Dushoff, J., \textbf{Park. S.W.}, and Champredon, D., 2017. Generation intervals in space. \textit{Epidemics6}. 2017. (Poster)\\
+  Bolker, B.M., and \textbf{Park. S.W.}, 2016. HIV virulence evolution in structured epidemic models. \textit{Ecology and Evolution of Infectious Diseases (EEID)}. 2016. (Poster)\\
+\end{yeardesc}
 
 \end{rSection}
 
@@ -207,18 +226,12 @@ Disease Ecology, Economics, and Policy, Princeton University
 
 \end{rSection}
 
-\begin{rSection}{Undergraduate Student Mentoring}
+\begin{rSection}{Undergraduate Students}
 
-Catalina Posada \hfill Spring 2024\\
-Princeton University junior undergraduate student.
-
-Joanne Wha-Eum Lee \hfill Fall 2020--Spring 2021 \\
-Princeton University undergraduate senior thesis project.\\
-Title: Direct and indirect mortality impacts of COVID-19 in the US, March--December 2020.
-
-Tomi Lawal \hfill Fall 2019--Spring 2020\\
-Princeton University undergraduate senior thesis project.\\
-Title: Analyzing the impact of a third dose of the measles--mumps--rubella vaccine used in a university mumps outbreak.
+Minh Le Quang (with Sarah Cobey), Summer 2025\\
+Catalina Posada (with Emily Howerton and Bryan Grenfell), Spring 2024\\
+Joanne Wha-Eum Lee (with Bryan Grenfell), Fall 2020--Spring 2021\\
+Tomi Lawal (with Bryan Grenfell), Fall 2019--Spring 2020
 
 \end{rSection}
 
@@ -238,7 +251,7 @@ Alama S., and \textbf{Park. S.W.}, 2017. MATH 2XX3 -- Advanced Calculus II: Clas
 
 \begin{rSection}{Professional service}
 
-Manuscript reviewer for American Naturalist, BMC Medicine, BMC Public Health, Emerging Infectious Diseases, Epidemics, Mathematical Biosciences, Nature Ecology \& Evolution, PeerJ, PLOS Computational Biology, PLOS One, PNAS, Proceedings of the Royal Society A, Proceedings of the Royal Society B, Scientific Reports, etc.
+Manuscript reviewer for \textit{American Naturalist, BMC Medicine, BMC Public Health, Emerging Infectious Diseases, Epidemics, Evolution, Medicine, and Public Health, Mathematical Biosciences, Nature Ecology \& Evolution, PeerJ, PLOS Computational Biology, PLOS One, PNAS, PNAS Nexus, Proceedings of the Royal Society A, Proceedings of the Royal Society B, Scientific Reports}, and other journals.
 
 Modeling SARS-CoV-2 outbreak responses and control strategies for Princeton University and the US Navy. 
 
